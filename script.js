@@ -1,8 +1,19 @@
-function volume_sphere() {
+function volume_sphere(event) {
     //Write your code here
-	let rad = parseFloat(document.getElementById('radius').value);
+	// let rad = parseFloat(document.getElementById('radius').value);
+ //        let vol = document.getElementById('volume');
+ //        // vol.inputMode.value = "none";
+
+ //        let result = (4 / 3) * Math.PI * rad * rad * rad;
+ //        console.log(result);
+
+ //        vol.value = result.toFixed(2);
+	
+	
+        event.preventDefault();
+        let rad = parseFloat(document.getElementById('radius').value);
         let vol = document.getElementById('volume');
-        // vol.inputMode.value = "none";
+        vol.inputMode.value = "none";
 
         let result = (4 / 3) * Math.PI * rad * rad * rad;
         console.log(result);
